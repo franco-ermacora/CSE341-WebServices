@@ -3,4 +3,8 @@ const router = express.Router();
 
 router.use('/contacts', require('./contacts'));
 
+router.get('/', (req, res) => {
+  res.send('Welcome to the Contacts API - Franco Ermacora');
+});
+
 module.exports = router;
