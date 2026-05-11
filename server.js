@@ -13,7 +13,6 @@ app
   })
   .use('/', require('./routes'));
 
-// Esta es la parte clave: intenta conectar antes de escuchar
 mongodb.initDb((err) => {
   if (err) {
     console.log(err);
